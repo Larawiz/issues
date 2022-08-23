@@ -1,0 +1,59 @@
+name: Bug Report
+description: File a bug report
+title: "Let's fix your blueprint"
+labels: ["bug"]
+assignees:
+  - DarkGhostHunter
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+        The more detailed this bug report is, the faster it can be reviewed and fixed.
+  - type: textarea
+    id: explanation
+    attributes:
+      label: Explanation
+      description: Write down what happened and what you expected to happen.
+      placeholder: When I tried to put X, I received Y...
+    validations:
+      required: true
+  - type: textarea
+    id: blueprint
+    attributes:
+      label: Blueprint
+      description: Put here the blueprint you're trying to scaffold.
+      placeholder: |
+        models:
+          User:
+            # ...
+      render: yaml
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Error
+      description: Put here the file content that is wrong, or the error message you received 
+      placeholder: |
+        <?php
+
+        namespace App\Models
+
+        class Something extends Happens
+        {
+            // ...
+        }
+      render: php
+    validations:
+      required: true
+  - type: dropdown
+    id: supporter
+    attributes:
+      label: Are you a Sponsor?
+      description: Github Sponsors get priority review, fixing and responses. Are you not? [Become one!](https://github.com/sponsors/Larawiz)
+      options:
+        - Yes, get this resolved quickly
+        - No, don't give priority to this
+    validations:
+      required: true
