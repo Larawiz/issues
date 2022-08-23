@@ -1,4 +1,4 @@
-# 🧙‍ ♂️Issues
+# 🧙 Issues
 
 Repository to register and fix Larawiz issues.
 
