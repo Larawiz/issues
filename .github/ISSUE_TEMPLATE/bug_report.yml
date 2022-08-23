@@ -1,6 +1,6 @@
 name: Bug Report
 description: File a bug report
-title: "Let's fix your blueprint"
+title: "Trying to do X results in Y"
 labels: ["bug"]
 assignees:
   - DarkGhostHunter
